@@ -27,3 +27,4 @@ class ShapeExec{
         new Hexagon().numOfSides();
     }
 }
+
