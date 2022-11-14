@@ -6,7 +6,7 @@ int create_graph(){
     int i,max_edges,origin,dest;
     printf("Enter vertices: "); scanf("%d",&n);
     max_edges=n*(n-1);
-    for(i=0;i<max_edges;i++){
+    for(i=1;i<=max_edges;i++){
         printf("Enter edge %d(0 0 to quit):  ",i);scanf("%d%d",&origin,&dest);
         if((origin==0) && (dest==0)) break;
         if((origin>n)||(dest>n)||(origin<=0)||(dest<=0)){
@@ -43,7 +43,7 @@ int delete_queue(){
 }
 int indegree(int node){
     int i,in_deg=0;
-    for(i=0;i<n;i++){
+    for(i=1;i<=n;i++){
         if(adj[i][node]==1) in_deg++;
     }return in_deg;
 }
