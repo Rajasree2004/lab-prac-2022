@@ -15,13 +15,13 @@ int create_graph(){
         else adj[origin][dest] = 1;
     }
 }
-int display(){
-    int i,j;
-    for(i=0;i<n;i++){
-        for(j=0;j<n;j++) printf("%3d",adj[i][j]);
-        printf("\n");
-    }
-}
+// int display(){
+//     int i,j;
+//     for(i=0;i<n;i++){
+//         for(j=0;j<n;j++) printf("%3d",adj[i][j]);
+//         printf("\n");
+//     }
+// }
 int insert_queue(int node){
     if(rear==MAX-1) printf("Queue Overflow\n");
     else{
