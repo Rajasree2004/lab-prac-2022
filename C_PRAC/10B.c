@@ -50,7 +50,7 @@ int indegree(int node){
 int main(){
     int i,j=0,k, topsort[MAX],indeg[MAX];
     create_graph();
-    printf("Adjacency Matrix: \n"); display();
+    // printf("Adjacency Matrix: \n"); display();
     for(i=1;i<=n;i++){
         indeg[i] = indegree(i);
         if(indeg[i]==0) insert_queue(i);
