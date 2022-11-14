@@ -1,3 +1,4 @@
+//BFS AND DFS 
 #include <stdio.h>
 int a[50][50], n, visited[50];
 int q[20], front=-1,rear=-1,s[20],top=-1,count=0;
