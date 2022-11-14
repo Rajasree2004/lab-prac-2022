@@ -1,3 +1,4 @@
+//DIJKSTRA
 #include<stdio.h>
 #include<curses.h>
 #define inf 9999

@@ -1,3 +1,4 @@
+//INFIX TO POSTFIX
 #include<stdio.h>
 #include<stdlib.h>//alternate of alloc.h
 #include<ncurses.h>
