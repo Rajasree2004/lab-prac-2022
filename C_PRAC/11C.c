@@ -1,3 +1,4 @@
+//INSERTIOn SORT
 #include <stdio.h>
 int main(){
     int arr[10]={34,9,58,63,75,7,5};
