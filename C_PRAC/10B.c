@@ -15,13 +15,13 @@ int create_graph(){
         else adj[origin][dest] = 1;
     }
 }
-// int display(){
-//     int i,j;
-//     for(i=0;i<n;i++){
-//         for(j=0;j<n;j++) printf("%3d",adj[i][j]);
-//         printf("\n");
-//     }
-// }
+int display(){
+    int i,j;
+    for(i=1;i<=n;i++){
+        for(j=1;j<=n;j++) printf("%3d",adj[i][j]);
+        printf("\n");
+    }
+}
 int insert_queue(int node){
     if(rear==MAX-1) printf("Queue Overflow\n");
     else{
@@ -50,7 +50,7 @@ int indegree(int node){
 int main(){
     int i,j=0,k, topsort[MAX],indeg[MAX];
     create_graph();
-    // printf("Adjacency Matrix: \n"); display();
+    printf("Adjacency Matrix: \n"); display();
     for(i=1;i<=n;i++){
         indeg[i] = indegree(i);
         if(indeg[i]==0) insert_queue(i);

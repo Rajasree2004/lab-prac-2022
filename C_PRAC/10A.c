@@ -30,9 +30,14 @@ int main(){
     int ch,start,i,j;
     char c,dummy;
     printf("Enter vertices: "); scanf("%d",&n);
+    printf("\nEnter elements: \n");
     for(i=0;i<n;i++){
         for(j=0;j<n;j++){
-            printf()
+            printf("%d --> %d: ",i,j); scanf("%d",&a[i][j]);
         }
+    }
+    printf("\nAdjacency Matrix: ");
+    for(i=0;i<n;i++){
+        
     }
 }
