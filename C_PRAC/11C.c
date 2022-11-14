@@ -1,9 +1,8 @@
-//INSERTIOn SORT
+//SELECTION SORT
 #include <stdio.h>
 int main(){
     int arr[10]={34,9,58,63,75,7,5};
-    int n=10;
-    int i, j, pos, swap;
+    int i, j, pos, swap, n=10;
     for(i=0;i<n-1;i++){
         pos = i;
         for(j = i+1;j<n;j++){
